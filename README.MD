@@ -1,5 +1,4 @@
 # File Creator</br>
-![logo](https://i.imgur.com/AZd1w6l.png)
 
 ## What the program does?
 The program creates a file of a certain size (b, kb, mb, gb) and saves it to the path specified by the user. You only need to specify the size, units, path, file name and extension (optional). 
