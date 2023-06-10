@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(255, 255, 255);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.languagetest.Controller">
+   <effect>
+      <DropShadow height="0.0" radius="0.0" spread="0.45" width="0.0" />
+   </effect>
+   <children>
+      <BorderPane prefHeight="2.0" prefWidth="607.0" style="-fx-background-color: rgb(10, 10, 10);">
+         <effect>
+            <DropShadow height="37.38" radius="15.850000000000001" width="28.02" />
+         </effect>
+      </BorderPane>
+      <BorderPane layoutX="-7.0" layoutY="399.0" prefHeight="2.0" prefWidth="607.0" style="-fx-background-color: rgb(10, 10, 10);">
+         <effect>
+            <DropShadow height="37.38" radius="15.850000000000001" width="28.02" />
+         </effect>
+      </BorderPane>
+      <AnchorPane layoutX="-1.0" layoutY="-3.0" prefHeight="407.0" prefWidth="2.0" style="-fx-background-color: rgb(10, 10, 10);">
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="600.0" layoutY="-14.0" prefHeight="407.0" prefWidth="2.0" style="-fx-background-color: rgb(10, 10, 10);">
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" layoutY="2.0" prefHeight="37.0" prefWidth="607.0" style="-fx-background-color: rgb(51, 0, 51);">
+         <children>
+            <Text fill="WHITE" layoutX="4.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                              github.com/MacloProfile" wrappingWidth="600.0">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="sizeFile" layoutX="182.0" layoutY="115.0" prefHeight="38.0" prefWidth="372.0" promptText="Specify the size of the future file" style="-fx-border-color: silver;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="134.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Creator" textAlignment="CENTER" wrappingWidth="324.49688720703125">
+         <font>
+            <Font name="Algerian" size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="size:" wrappingWidth="105.63507080078125">
+         <font>
+            <Font name="Algerian" size="28.0" />
+         </font>
+      </Text>
+      <TextField fx:id="filePath" layoutX="182.0" layoutY="175.0" prefHeight="38.0" prefWidth="372.0" promptText="Specify the path of the future file (default C:\)" style="-fx-border-color: silver;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="78.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="path:" wrappingWidth="112.83502197265625">
+         <font>
+            <Font name="Algerian" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="intel" layoutX="446.0" layoutY="309.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="130.0" style="-fx-background-color: rgb(81, 0, 81);" text="CREATE" textFill="#fcfcfc">
+         <font>
+            <Font name="Algerian" size="13.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="byteOne" layoutX="275.0" layoutY="271.0" mnemonicParsing="false" text="byte(b)">
+         <font>
+            <Font name="Algerian" size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="kilobyte" layoutX="275.0" layoutY="296.0" mnemonicParsing="false" text="Kilobyte(kb)">
+         <font>
+            <Font name="Algerian" size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="megabyte" layoutX="275.0" layoutY="321.0" mnemonicParsing="false" text="megabyte(mb)">
+         <font>
+            <Font name="Algerian" size="15.0" />
+         </font>
+      </CheckBox>
+      <Text layoutX="14.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select size units:" wrappingWidth="260.83509826660156">
+         <font>
+            <Font name="Algerian" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="118.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Important: Check only 1 check box" underline="true" wrappingWidth="404.03504943847656">
+         <font>
+            <Font name="Algerian" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
