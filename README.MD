@@ -11,3 +11,6 @@ These files are convenient to use when combining several files into one using sp
 - SIZE UNITS - units of measurement
 - NAME - file name (optional, by default the file name is file + random number)
 
+## Important
+Version java 17 and higher!</br>
+If you get "File ERROR" error, try to select another folder (or create a new one and select it). Often this error is caused by the fact that the application does not have enough permissions to create a file.

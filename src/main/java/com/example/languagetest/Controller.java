@@ -12,6 +12,12 @@ import javafx.scene.control.TextField;
 public class Controller {
 
     @FXML
+    private TextField copies;
+
+    @FXML
+    private CheckBox gbyte;
+
+    @FXML
     private ResourceBundle resources;
 
     @FXML
@@ -37,12 +43,15 @@ public class Controller {
     private TextField sizeFile;
 
     @FXML
+    private TextField nameOfFile;
+
+    @FXML
     void initialize() {
         assert intel != null : "fx:id=\"intel\" was not injected: check your FXML file 'hello-view.fxml'.";
         AtomicReference<String> t = new AtomicReference<>();
         intel.setOnAction(event -> {
             AddSizeForFinalFile sizeForFinalFile = new AddSizeForFinalFile(sizeFile.getText(), filePath.getText(),
-                    getCheckBox());
+                    getCheckBox(), nameOfFile.getText(), copies.getText());
             sizeForFinalFile.startAll();
         });
     }
@@ -54,6 +63,8 @@ public class Controller {
             return 2;
         if (megabyte.isSelected())
             return 3;
+        if (gbyte.isSelected())
+            return 4;
         return 0;
     }
 }

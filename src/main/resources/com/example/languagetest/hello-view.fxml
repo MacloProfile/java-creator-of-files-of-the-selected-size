@@ -44,60 +44,76 @@
             </Text>
          </children>
       </AnchorPane>
-      <TextField fx:id="sizeFile" layoutX="182.0" layoutY="115.0" prefHeight="38.0" prefWidth="372.0" promptText="Specify the size of the future file" style="-fx-border-color: silver;">
+      <TextField fx:id="sizeFile" layoutX="182.0" layoutY="182.0" prefHeight="38.0" prefWidth="372.0" promptText="Specify the size of the file" style="-fx-border-color: silver;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <Text layoutX="134.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Creator" textAlignment="CENTER" wrappingWidth="324.49688720703125">
+      <Text layoutX="134.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Creator" textAlignment="CENTER" wrappingWidth="324.49688720703125">
          <font>
             <Font name="Algerian" size="33.0" />
          </font>
       </Text>
-      <Text layoutX="78.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="size:" wrappingWidth="105.63507080078125">
+      <Text layoutX="77.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="size:" wrappingWidth="105.63507080078125">
          <font>
             <Font name="Algerian" size="28.0" />
          </font>
       </Text>
-      <TextField fx:id="filePath" layoutX="182.0" layoutY="175.0" prefHeight="38.0" prefWidth="372.0" promptText="Specify the path of the future file (default C:\)" style="-fx-border-color: silver;">
+      <TextField fx:id="filePath" layoutX="182.0" layoutY="132.0" prefHeight="38.0" prefWidth="372.0" promptText="Specify the path of the file (default C:\)" style="-fx-border-color: silver;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <Text layoutX="78.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="path:" wrappingWidth="112.83502197265625">
+      <Text layoutX="77.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="path:" wrappingWidth="112.83502197265625">
          <font>
             <Font name="Algerian" size="28.0" />
          </font>
       </Text>
-      <Button fx:id="intel" layoutX="446.0" layoutY="309.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="130.0" style="-fx-background-color: rgb(81, 0, 81);" text="CREATE" textFill="#fcfcfc">
+      <Button fx:id="intel" layoutX="455.0" layoutY="321.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="130.0" style="-fx-background-color: rgb(81, 0, 81);" text="CREATE" textFill="#fcfcfc">
          <font>
             <Font name="Algerian" size="13.0" />
          </font>
       </Button>
-      <CheckBox fx:id="byteOne" layoutX="275.0" layoutY="271.0" mnemonicParsing="false" text="byte(b)">
+      <CheckBox fx:id="byteOne" layoutX="27.0" layoutY="266.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="byte(b)">
          <font>
             <Font name="Algerian" size="15.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="kilobyte" layoutX="275.0" layoutY="296.0" mnemonicParsing="false" text="Kilobyte(kb)">
+      <CheckBox fx:id="kilobyte" layoutX="27.0" layoutY="287.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="130.0" text="Kilobyte(kb)">
          <font>
             <Font name="Algerian" size="15.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="megabyte" layoutX="275.0" layoutY="321.0" mnemonicParsing="false" text="megabyte(mb)">
+      <CheckBox fx:id="megabyte" layoutX="27.0" layoutY="308.0" mnemonicParsing="false" text="megabyte(mb)">
          <font>
             <Font name="Algerian" size="15.0" />
          </font>
       </CheckBox>
-      <Text layoutX="14.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select size units:" wrappingWidth="260.83509826660156">
+      <Text layoutX="27.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="size units" wrappingWidth="139.99999999999994">
+         <font>
+            <Font name="Algerian" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameOfFile" layoutX="182.0" layoutY="81.0" prefHeight="38.0" prefWidth="372.0" promptText="specify the name and extension (default random)" style="-fx-border-color: silver;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="78.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name:" wrappingWidth="112.83502197265625">
          <font>
             <Font name="Algerian" size="28.0" />
          </font>
       </Text>
-      <Text layoutX="118.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Important: Check only 1 check box" underline="true" wrappingWidth="404.03504943847656">
+      <CheckBox fx:id="gbyte" layoutX="27.0" layoutY="327.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="140.0" text="Gbyte(gb)">
          <font>
-            <Font name="Algerian" size="21.0" />
+            <Font name="Algerian" size="15.0" />
+         </font>
+      </CheckBox>
+      <Text layoutX="222.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="number of copies" wrappingWidth="232.8350830078125">
+         <font>
+            <Font name="Algerian" size="25.0" />
          </font>
       </Text>
+      <TextField fx:id="copies" layoutX="256.0" layoutY="273.0" prefHeight="29.0" prefWidth="164.0" promptText="default 1" />
    </children>
 </Pane>
