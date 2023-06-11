@@ -37,12 +37,12 @@ public class AddSizeForFinalFile {
         this.countOfCopies = countOfCopies;
     }
 
-    public void startAll() {
+    public String startAll() {
         //error check
         if (unit == 0) {
-            System.out.println("Select a checkbox");
+            return "Select a checkbox";
         } else if (flag) {
-            System.out.println("Incorrect file size or number of files");
+            return "Incorrect file size or number of files";
 
         } else {
             //set quantity of bytes
@@ -52,12 +52,12 @@ public class AddSizeForFinalFile {
             for (int i = 0; i < Copies.countCopies(countOfCopies); i++) {
                 try {
                     createFile(filePath, fileSizeInBytes, fileName);
-                    System.out.println("File was created successfully");
                 } catch (Exception e) {
-                    System.out.println("File ERROR");
+                    return "File creation error (most likely a problem with permissions to the folder)";
                 }
             }
         }
+        return "File was created successfully";
     }
 
     private void createFile(String filePath, long fileSizeInBytes, String fileName) throws IOException {
@@ -65,6 +65,8 @@ public class AddSizeForFinalFile {
         if (fileName.equals("")) {
             int random = (int) (Math.random() * 100000);
             fileName = "file" + random + ".txt";
+        } else if (Copies.countCopies(countOfCopies) > 1) {
+            fileName = (int) (Math.random() * 1000) + fileName;
         }
 
         FileOutputStream fos = new FileOutputStream(filePath + "\\" + fileName);

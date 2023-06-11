@@ -7,6 +7,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class Controller {
@@ -46,13 +47,16 @@ public class Controller {
     private TextField nameOfFile;
 
     @FXML
+    private TextArea outputTable;
+
+    @FXML
     void initialize() {
         assert intel != null : "fx:id=\"intel\" was not injected: check your FXML file 'hello-view.fxml'.";
         AtomicReference<String> t = new AtomicReference<>();
         intel.setOnAction(event -> {
             AddSizeForFinalFile sizeForFinalFile = new AddSizeForFinalFile(sizeFile.getText(), filePath.getText(),
                     getCheckBox(), nameOfFile.getText(), copies.getText());
-            sizeForFinalFile.startAll();
+            outputTable.setText(sizeForFinalFile.startAll());
         });
     }
     //which checkbox the user selected
