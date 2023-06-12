@@ -1,5 +1,10 @@
 # File Creator</br>
 
+## Interface
+The program is created using JavaFX and the interface is developed in the software SceneBuilder
+
+![](https://i.imgur.com/V3MUCHH.png)
+
 ## What the program does?
 The program creates a file of a certain size (b, kb, mb, gb) and saves it to the path specified by the user. You only need to specify the size, units, path, file name and extension (optional). 
 
