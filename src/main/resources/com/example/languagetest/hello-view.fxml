@@ -75,7 +75,7 @@
             <Font name="Algerian" size="13.0" />
          </font>
       </Button>
-      <CheckBox fx:id="byteOne" layoutX="27.0" layoutY="266.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="byte(b)">
+      <CheckBox fx:id="byteOne" layoutX="27.0" layoutY="266.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" text="byte(b)">
          <font>
             <Font name="Algerian" size="15.0" />
          </font>
@@ -85,7 +85,7 @@
             <Font name="Algerian" size="15.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="megabyte" layoutX="27.0" layoutY="308.0" mnemonicParsing="false" text="megabyte(mb)">
+      <CheckBox fx:id="megabyte" layoutX="27.0" layoutY="308.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="150.0" text="megabyte(mb)">
          <font>
             <Font name="Algerian" size="15.0" />
          </font>
@@ -105,7 +105,7 @@
             <Font name="Algerian" size="28.0" />
          </font>
       </Text>
-      <CheckBox fx:id="gbyte" layoutX="27.0" layoutY="327.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="140.0" text="Gbyte(gb)">
+      <CheckBox fx:id="gbyte" layoutX="27.0" layoutY="327.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="122.0" text="Gbyte(gb)">
          <font>
             <Font name="Algerian" size="15.0" />
          </font>
